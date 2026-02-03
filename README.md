@@ -41,37 +41,48 @@ mcporter call alpaca.get_stock_latest_quote symbol_or_symbols=TSLA
 ## ⚠️ Safety
 All trading is done with **paper money** (fake money, real market data). No real financial risk.
 
-## 🔮 **NEW: Multi-Platform Prediction Markets Integration**
+## 🚀 **NEW: Complete Trading UI & Management System**
 
-### **Polymarket + Kalshi + PredictIt → Alpaca Strategy**
-**Revolutionary approach**: Cross-platform prediction market intelligence for superior alpha
+### **Comprehensive Trading Dashboard**
+**Full-featured UI**: From bet discovery to trade execution and performance monitoring
 
-**How it works**:
-1. **Monitor 3 platforms** - Polymarket, Kalshi, PredictIt simultaneously  
-2. **Find consensus signals** - When multiple platforms agree (higher confidence)
-3. **Detect arbitrage** - Platform price differences reveal opportunities
-4. **Execute via Alpaca** - Confidence-based position sizing and execution
+**Features**:
+1. **🔍 Bet Discovery** - Scan Polymarket for finance-related opportunities
+2. **📋 Trade Proposals** - AI-generated recommendations with manual approval
+3. **📊 Active Trades** - Real-time monitoring and performance tracking
+4. **⚡ One-Click Actions** - Approve, execute, and close positions
 
-### **Enhanced Strategies**
-- **Consensus trades**: All platforms agree = 2.0% position size
-- **Arbitrage plays**: Platform differences = directional signals  
-- **Early warnings**: Platform divergence = avoid false signals
-- **Risk reduction**: Multi-source validation reduces bad trades
+### **How It Works**
+1. **Discover**: Scan Polymarket for finance/stock-related bets
+2. **Assess**: AI analyzes relevance and generates trade proposals  
+3. **Approve**: Manual review and approval of each trade
+4. **Execute**: Automatic execution via Alpaca when approved
+5. **Monitor**: Real-time tracking with performance metrics and recommendations
 
-### **Platform Strengths**
-- **Polymarket**: Crypto-native, global traders, high liquidity
-- **Kalshi**: CFTC-regulated, US institutional money  
-- **PredictIt**: Academic traders, political expertise
+### **UI Components**
+- **Smart Discovery**: Finance keyword filtering with relevance scoring
+- **Trade Intelligence**: Symbol mapping and confidence-based position sizing
+- **Approval Workflow**: Manual oversight with detailed reasoning
+- **Performance Dashboard**: Real-time P&L, recommendations, and actions
+- **Persistent Storage**: SQLite database for all trades and history
 
-### **Current Setup**
-✅ Polymarket MCP server installed  
-✅ Multi-platform MCP server installed (Polymarket + Kalshi + PredictIt)  
-✅ Alpaca integration working ($100k paper trading)  
-✅ Enhanced risk management (consensus-based position sizing)  
-✅ Cross-platform demo ready  
+### **Quick Start**
+```bash
+# Launch the full UI dashboard
+./run_ui.sh
 
-**Try it**: `python3 demo-prediction-trading.py`  
-**Enhanced**: `python3 multi-prediction-demo.py`
+# Or use CLI for quick operations
+./trader_cli.py scan        # Discover new bets
+./trader_cli.py proposals   # View pending proposals  
+./trader_cli.py trades      # Check active positions
+./trader_cli.py update      # Update all prices
+```
+
+### **Enhanced Multi-Platform Integration**
+- **Polymarket**: Primary source for prediction market intelligence
+- **Alpaca Markets**: Execution platform with $100k paper trading
+- **Cross-validation**: Multiple data sources for higher confidence trades
+- **Risk Management**: Confidence-based position sizing and stop-loss recommendations
 
 ---
 **Created**: 2026-02-02  
